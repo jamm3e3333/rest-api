@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/heli.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" >
+    <title>index</title>
+</head>
+<body>
+    {{>menu}}
+    <div class="container">
+        {{>header}}
+        <form name="form1">
+            <div class="container-fluid p-4 _col">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row p-2 mb-2">
+                            <div class="col-md-12">
+                                <h5>Zadej název bloku a jeho hodnotu</h5>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-6">
+                                <label>Název bloku</label>
+                            </div>    
+                            <div class="col-md-6">
+                                <input  type="text"
+                                        placeholder="Název..."
+                                        size="20"
+                                        id="input-name-post-1">
+                            </div>    
+                        </div>
+                        <div class="row p-2">
+                                <div class="col-md-6">
+                                <label>Číselná hodnota</label>
+                            </div>    
+                            <div class="col-md-6">
+                                <input  type="text" 
+                                        placeholder="Hodnota..."
+                                        size="20"
+                                        id="input-value-post-1" />
+                            </div>  
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-5">
+                                <button id="btn-value-post-1" 
+                                        class="red"
+                                        disabled>Nastav hodnotu</button>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-12">
+                                <p id="result-w-1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row p-2 mb-2">
+                            <div class="col-md-12">
+                                <h5>MQTT stats</h5>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-3 ms-2">
+                                <button id="btn-mqtt">Zjisti status MQTT</button>
+                            </div>  
+                            <div class="col-md-6 ms-3">
+                                <p id="status-mqtt">
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-3 ms-2">
+                                <button id="toggle-mqtt">MQTT Switch</button>
+                            </div>
+                            <div class="col-md-6 ms-3">
+                                <p id="para-mqtt-switch"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>  
+    </div>
+    <script src='./js/app.js'></script>
+</body>
+</html>

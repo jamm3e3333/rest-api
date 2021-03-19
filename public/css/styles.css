@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(to top, #00cc66 0%, #ffffff 100%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.red {
+    background-color: #ff7575;
+    color: black;
+}
+
+.green{
+    background-color: #34e368;
+    color: white;
+}
+
+.blue{
+    background-color: dodgerblue;
+    color: white;
+}
+._col{
+    background-color: #e8e8e8;
+    border: 2.5px solid silver;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #000000b6;
+  }
+  
+  li {
+    /* float: center; */
+    display: inline-block;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover{
+    color: white;
+    background-color: #24ca77;
+  }
+
+  
